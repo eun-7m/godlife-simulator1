@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>갓생시뮬레이터</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>갓생시뮬레이터</header>
+  <nav>
+    <button onclick="showPage('mission')" class="active" id="tab-mission">미션</button>
+    <button onclick="showPage('calendar')" id="tab-calendar">달력</button>
+  </nav>
+  <main>
+    <section id="mission" class="active">
+      <h2>환영합니다! 👋<br>오늘도 갓생을 살아볼까요?</h2>
+      <div id="coinDisplay">💰 코인: 0</div>
+      <button class="main-btn" onclick="addMission()">미션 받기 🎲</button>
+      <div id="missionList"></div>
+      <div class="custom-mission-section">
+        <input type="text" id="customMissionInput" placeholder="직접 미션을 입력해보세요" />
+        <div style="text-align: left; margin-top: 0.5rem;">
+          <button onclick="addCustomMission()" class="add-custom-btn">미션 추가 ➕</button>
+        </div>
+      </div>
+    </section>
+    <section id="calendar">
+      <h2>갓생 달력</h2>
+      <div class="calendar-header">
+        <button onclick="changeMonth(-1)">←</button>
+        <span id="calendarMonth"></span>
+        <button onclick="changeMonth(1)">→</button>
+      </div>
+      <div class="calendar-grid" id="calendarDays">
+        <div class="calendar-day">일</div>
+        <div class="calendar-day">월</div>
+        <div class="calendar-day">화</div>
+        <div class="calendar-day">수</div>
+        <div class="calendar-day">목</div>
+        <div class="calendar-day">금</div>
+        <div class="calendar-day">토</div>
+      </div>
+      <div class="calendar-grid" id="calendarDates"></div>
+      <div class="calendar-summary" id="todaySummary"></div>
+      <div id="calendarDetail"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

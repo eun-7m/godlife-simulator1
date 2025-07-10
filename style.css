@@ -1,0 +1,157 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Pretendard', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+header {
+  background: #6366f1;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #e0e7ff;
+  padding: 0.5rem;
+}
+nav button {
+  flex: 1;
+  padding: 0.75rem;
+  background: #c7d2fe;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3730a3;
+}
+nav button.active {
+  background: #6366f1;
+  color: white;
+}
+main section {
+  display: none;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+main section.active { display: block; }
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+button.main-btn {
+  display: block;
+  background: #6366f1;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+.mission {
+  background: #e0e7ff;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mission button {
+  background: #10b981;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.mission button:disabled {
+  background: #a5f3fc;
+  color: #555;
+  cursor: not-allowed;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.calendar-header button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #6366f1;
+  cursor: pointer;
+  font-weight: bold;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+.calendar-day, .calendar-date {
+  text-align: center;
+  font-weight: bold;
+}
+.calendar-day {
+  color: #94a3b8;
+}
+.calendar-date {
+  background: #e2e8f0;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.calendar-date.done {
+  background: #6366f1;
+  color: white;
+}
+.calendar-summary {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #475569;
+}
+#coinDisplay {
+  text-align: center;
+  font-weight: bold;
+  color: #16a34a;
+  margin-bottom: 1rem;
+}
+.custom-mission-section {
+  margin-top: 1rem;
+}
+#customMissionInput {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+}
+.add-custom-btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  background: #c7d2fe;
+  color: #3730a3;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#calendarDetail {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: #f1f5f9;
+}
